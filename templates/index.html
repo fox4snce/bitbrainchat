@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/left_sidebar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/right_sidebar.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
 <body>
     <div class="container">
@@ -52,7 +53,6 @@
             <select id="saved-prompts"></select>
         </div>
     </div>
-
-    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
